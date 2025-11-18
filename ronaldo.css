@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-padding-top: 11.5rem;
+  scroll-behavior: smooth;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: oklch(45.9% 0.187 3.815);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-container {
+    max-width: 120rem;
+    margin-inline: auto;
+    text-align: center;
+    padding-block: 2rem;
+    color: #FFF;
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+    }
+
+    a {
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    li:hover {
+        transform: scale(1.1);
+        font-weight: 700;
+        transition: .4s;
+    }
+}
+
+main {
+    background-color: oklch(94.1% 0.03 12.58);
+    min-height: calc(100svh - 10.8px);
+}
+
+.main-container {
+    padding-block: 14.8rem 4rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    p {
+        max-width: 63rem;
+        margin-inline: auto;
+        line-height: 2.5rem;
+    }
+
+    section {
+        margin-bottom: 4rem;
+
+        div {
+            width: 6rem;
+            height: 6rem;
+            background-color: oklch(74.6% 0.16 232.661);
+            margin-inline: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .blue {
+            background-color: oklch(50% 0.134 242.749);
+            }
+        }
+
+        mark {
+            background-color: oklch(82.3% 0.12 346.018);
+    }
+}
+
+#relative {
+    .blue {
+        position: relative;
+        bottom: 3rem;
+        left: 3rem;
+    }
+}
+
+#absolute {
+    .blue {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
+
+.arrow {
+    background-color: oklch(45.9% 0.187 3.815);
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+}
